@@ -139,14 +139,12 @@ console.log(window.innerWidth);
 
 setInterval(() => {
   if (window.innerWidth < 900) {
-    document.getElementById("nav-image").src =
-      "../Public/Images/finda-Logo.png";
+    document.getElementById("nav-image").src = "src/images/finda-Logo.png";
     document.getElementById("mos1").classList.remove("hideElement");
     document.getElementById("mos2").classList.remove("hideElement");
     document.getElementById("mos3").classList.remove("hideElement");
   } else {
-    document.getElementById("nav-image").src =
-      "../Public/Images/finda-Logo-weiß.png";
+    document.getElementById("nav-image").src = "src/images/finda-Logo-weiß.png";
     document.getElementById("mos1").classList.add("hideElement");
     document.getElementById("mos2").classList.add("hideElement");
     document.getElementById("mos3").classList.add("hideElement");
