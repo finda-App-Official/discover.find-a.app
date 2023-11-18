@@ -1,0 +1,54 @@
+/* Footer */
+
+footer {
+  height: 20vh;
+  position: relative;
+  background: linear-gradient(117.14deg, #0265b1 42.25%, #7b358c 72%);
+  width: 100%;
+}
+.topbar {
+  width: 180vh;
+  margin: 20px;
+  display: flex;
+}
+.socials-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.socials-title {
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+}
+.socials-button {
+  display: flex;
+}
+.social {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  fill: white;
+}
+.social:hover {
+  cursor: pointer;
+}
+.mail {
+  fill: white;
+  margin: auto 700px;
+}
+.bottombar {
+  display: flex;
+  justify-content: end;
+  margin: 0 20px;
+}
+.bottombar-item {
+  font-size: 12px;
+  font-family: "ABeeZee";
+  margin: 10px;
+  color: white;
+}
+.bottombar-item:hover {
+  cursor: pointer;
+}

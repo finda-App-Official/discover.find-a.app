@@ -1,0 +1,125 @@
+/* Navbar */
+
+.navbar {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  z-index: 100;
+  width: 100%;
+}
+.half {
+  width: 100vh;
+  display: flex;
+}
+.second-half {
+  justify-content: end;
+}
+.navbar-image {
+  height: 60px;
+  margin: auto 20px;
+}
+.main-navbar {
+  height: 80px;
+  display: flex;
+  margin: 0 20px;
+  flex-direction: row;
+}
+.navbar-item {
+  font-size: 30px;
+  font-family: "Saira Condensed";
+  font-weight: 300;
+  color: white;
+  height: 52px;
+  margin: auto 10px;
+}
+.nav-selected {
+  padding: 14px;
+  margin: auto 0;
+  background-color: rgb(187, 187, 187, 0.4);
+}
+.second-navbar {
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  float: right;
+}
+.navbar-button {
+  height: 61px;
+  width: 112px;
+  background-color: #1152b4;
+  border: none;
+  border-radius: 12px;
+  font-family: "Saira Condensed";
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  margin: auto 40px;
+}
+.navbar-item:hover {
+  cursor: pointer;
+}
+.navbar-button:hover {
+  cursor: pointer;
+}
+.navburger-container {
+  height: 40px;
+  width: 40px;
+  margin: auto 20px;
+  display: none;
+}
+.navburger-container:hover {
+  cursor: pointer;
+}
+
+/* Vertical navbar */
+
+.vertical-nav {
+  height: 100vh;
+  background-color: white;
+  width: 200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+}
+.ver-item {
+  font-size: 30px;
+  font-family: "Saira Condensed";
+  font-weight: 300;
+  color: black;
+  margin: 10px 20px;
+}
+.ver-item:hover {
+  cursor: pointer;
+}
+#ver-bewerber {
+  margin-top: 90px;
+}
+.ver-selected {
+  background-color: rgb(168, 168, 168);
+  padding: 10px 20px;
+  margin: 0;
+  scroll-behavior: auto;
+}
+#ver-about {
+  margin-top: 100px;
+}
+.ver-button {
+  height: 61px;
+  width: 112px;
+  background-color: #1152b4;
+  border: none;
+  border-radius: 12px;
+  font-family: "Saira Condensed";
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+.ver-button:hover {
+  cursor: pointer;
+}
