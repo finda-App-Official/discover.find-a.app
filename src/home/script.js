@@ -51,7 +51,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `../Public/Images/sponsors/${sponsors.lists.l1[i]}-sponsor.png`;
+      ).src = `.src/images/sponsors/${sponsors.lists.l1[i]}-sponsor.png`;
     }
   } else if (to === 2) {
     cb1.classList.remove("control-selected");
@@ -62,7 +62,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `../Public/Images/sponsors/${sponsors.lists.l2[i]}-sponsor.png`;
+      ).src = `.src/images/sponsors/${sponsors.lists.l2[i]}-sponsor.png`;
     }
   } else if (to === 3) {
     cb1.classList.remove("control-selected");
@@ -73,7 +73,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `../Public/Images/sponsors/${sponsors.lists.l3[i]}-sponsor.png`;
+      ).src = `.src/images/sponsors/${sponsors.lists.l3[i]}-sponsor.png`;
     }
   } else if (to === 4) {
     cb1.classList.remove("control-selected");
@@ -84,7 +84,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `../Public/Images/sponsors/${sponsors.lists.l4[i]}-sponsor.png`;
+      ).src = `.src/images/sponsors/${sponsors.lists.l4[i]}-sponsor.png`;
     }
   } else if (to === 5) {
     cb1.classList.remove("control-selected");
@@ -95,7 +95,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `../Public/Images/sponsors/${sponsors.lists.l5[i]}-sponsor.png`;
+      ).src = `src/images/sponsors/${sponsors.lists.l5[i]}-sponsor.png`;
     }
   }
 }
@@ -131,7 +131,7 @@ window.onload = () => {
   let randomNumber = Math.floor(Math.random() * 3) + 1;
   document.getElementById(
     "showcase2"
-  ).style.backgroundImage = `url(../Public/Images/background${randomNumber}.jpg)`;
+  ).style.backgroundImage = `url(src/images/background${randomNumber}.jpg)`;
 };
 
 // Screenrules
