@@ -51,7 +51,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `.src/images/sponsors/${sponsors.lists.l1[i]}-sponsor.png`;
+      ).src = `src/images/sponsors/${sponsors.lists.l1[i]}-sponsor.png`;
     }
   } else if (to === 2) {
     cb1.classList.remove("control-selected");
@@ -62,7 +62,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `.src/images/sponsors/${sponsors.lists.l2[i]}-sponsor.png`;
+      ).src = `src/images/sponsors/${sponsors.lists.l2[i]}-sponsor.png`;
     }
   } else if (to === 3) {
     cb1.classList.remove("control-selected");
@@ -73,7 +73,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `.src/images/sponsors/${sponsors.lists.l3[i]}-sponsor.png`;
+      ).src = `src/images/sponsors/${sponsors.lists.l3[i]}-sponsor.png`;
     }
   } else if (to === 4) {
     cb1.classList.remove("control-selected");
@@ -84,7 +84,7 @@ function changeSP(to) {
     for (let i = 0; i < 4; i++) {
       document.getElementById(
         `sponsor${i + 1}`
-      ).src = `.src/images/sponsors/${sponsors.lists.l4[i]}-sponsor.png`;
+      ).src = `src/images/sponsors/${sponsors.lists.l4[i]}-sponsor.png`;
     }
   } else if (to === 5) {
     cb1.classList.remove("control-selected");
