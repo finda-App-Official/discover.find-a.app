@@ -4,9 +4,3 @@ to = "/index.html"
 [[redirects]]
 from = "/unternehmen"
 to = "/unternehmen.html"
-[[redirects]]
-from ="/about"
-to = "/about.html"
-[[redirects]]
-from = "/about/impressum"
-to = "/impressum.html"
