@@ -135,6 +135,14 @@ window.onload = () => {
 };
 
 // Screenrules
+setInterval(() => {
+  if (sponsors.currentShown !== 5) {
+    changeSP(sponsors.currentShown + 1);
+  } else {
+    sponsors.currentShown = 1;
+    changeSP(sponsors.currentShown);
+  }
+}, 2000);
 
 setInterval(() => {
   if (window.innerWidth < 900) {
@@ -149,12 +157,3 @@ setInterval(() => {
     document.getElementById("mos3").classList.add("hideElement");
   }
 }, 1);
-
-setInterval(() => {
-  if (sponsors.currentShown !== 5) {
-    changeSP(sponsors.currentShown + 1);
-  } else {
-    sponsors.currentShown = 1;
-    changeSP(sponsors.currentShown);
-  }
-}, 2000);
