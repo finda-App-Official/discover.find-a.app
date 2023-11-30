@@ -158,4 +158,4 @@ setInterval(() => {
     sponsors.currentShown = 1;
     changeSP(sponsors.currentShown);
   }
-}, 10000);
+}, 2000);
