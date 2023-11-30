@@ -135,7 +135,6 @@ window.onload = () => {
 };
 
 // Screenrules
-console.log(window.innerWidth);
 
 setInterval(() => {
   if (window.innerWidth < 900) {
