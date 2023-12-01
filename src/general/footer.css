@@ -5,6 +5,7 @@ footer {
   position: relative;
   background: linear-gradient(117.14deg, #0265b1 42.25%, #7b358c 72%);
   width: 100%;
+  margin-bottom: -20px;
 }
 .topbar {
   width: 180vh;
