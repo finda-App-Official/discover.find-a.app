@@ -192,6 +192,8 @@ html {
 }
 .mo2 {
   margin: -80px auto;
+  width: 20vw;
+  height: 40vw;
 }
 
 /* Third */
@@ -203,7 +205,8 @@ html {
 }
 .mo3 {
   margin: -80px auto;
-  height: 852px;
+  width: 20vw;
+  height: 40vw;
 }
 .txt3 {
   margin: auto;
