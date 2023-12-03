@@ -132,6 +132,8 @@ body::-webkit-scrollbar {
 }
 .mobile {
   margin: auto;
+  width: 20vw;
+  height: 40vw;
 }
 .text-container {
   display: flex;
@@ -186,7 +188,6 @@ body::-webkit-scrollbar {
 }
 .mo2 {
   margin: -80px auto;
-  height: 852px;
 }
 
 /* Third */
@@ -316,6 +317,26 @@ body::-webkit-scrollbar {
   }
   .mo3 {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .mob {
+    width: 80vw;
+    margin: 10vw;
+  }
+}
+@media (max-width: 300px) {
+  .tex {
+    width: 80vw;
+    margin: 10vw;
+  }
+  .hea {
+    font-size: 20vw;
+    line-height: unset;
+  }
+  .sub {
+    font-size: 15vw;
+    line-height: normal;
   }
 }
 .hideElement {
