@@ -138,6 +138,7 @@ window.onload = () => {
 setInterval(() => {
   if (sponsors.currentShown !== 5) {
     changeSP(sponsors.currentShown + 1);
+    sponsors.currentShown++;
   } else {
     sponsors.currentShown = 1;
     changeSP(sponsors.currentShown);
