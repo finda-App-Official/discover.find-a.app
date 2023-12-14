@@ -1,0 +1,31 @@
+/* General */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html {
+  overflow-x: hidden;
+}
+
+/* Sections */
+
+.content-container {
+  margin-top: 100px;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+h1 {
+  font-family: "Saira Condensed";
+  font-size: 30px;
+  margin: 10px;
+}
+p {
+  font-family: "Saira Condensed";
+  margin: 10px;
+}
