@@ -30,7 +30,7 @@
   font-size: 30px;
   font-family: "Saira Condensed";
   font-weight: 300;
-  color: white;
+  color: black;
   height: 52px;
   margin: auto 10px;
 }
@@ -122,4 +122,30 @@
 }
 .ver-button:hover {
   cursor: pointer;
+}
+
+/* Medias */
+
+@media (max-width: 1000px) {
+  .main-navbar {
+    display: none;
+  }
+  .second-navbar {
+    display: none;
+  }
+  .navbar-button {
+    display: none;
+  }
+  .navburger-container {
+    display: flex;
+  }
+}
+@media (max-width: 900px) {
+  .navburger-container > svg {
+    fill: black;
+  }
+}
+.hideElement {
+  display: none;
+  height: 0px;
 }
