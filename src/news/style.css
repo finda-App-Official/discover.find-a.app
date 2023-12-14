@@ -1,0 +1,60 @@
+/* General */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sections */
+
+.content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content-half {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.content-title {
+  font-size: 100px;
+  font-family: "Anton";
+  margin: auto;
+}
+.content-form {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.content-email {
+  width: 90%;
+  margin: auto;
+  height: 80px;
+  border-radius: 10px;
+  border: 0.25px black solid;
+  font-family: "Saira Condensed";
+  font-size: 40px;
+  text-align: center;
+}
+.content-submit {
+  width: 60%;
+  margin: 50px auto;
+  background: linear-gradient(117deg, #0265b1 42.25%, #7b358c 72%);
+  color: white;
+  font-family: "ABeeZee";
+  font-size: 40px;
+  border: none;
+  border-radius: 5px;
+  height: 80px;
+}
+.content-submit:hover {
+  cursor: pointer;
+}
