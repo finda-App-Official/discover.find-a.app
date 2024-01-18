@@ -1,0 +1,166 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Anton&family=Archivo+Narrow&family=Saira+Condensed&display=swap");
+
+/* Configs */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: clip;
+}
+
+/* Code */
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.navbar-content {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo {
+  width: fit-content;
+  display: flex;
+  height: 50px;
+  justify-self: flex-start;
+}
+.logo-img {
+  height: 60px;
+}
+.navbar-links {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 20px;
+  }
+}
+.navbar-link-selected {
+  font-weight: 600;
+}
+.navbar-button {
+  background-color: rgb(46, 103, 226);
+  border: none;
+  border-radius: 10px;
+  aspect-ratio: 2/1;
+  font-size: 20px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.navbar-button:hover {
+  background-color: rgb(36, 83, 186);
+}
+.preise {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.preise-title {
+  font-size: 60px;
+  font-family: "Archivo Narrow", sans-serif;
+  margin: 30px;
+}
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+tr:first-child {
+  border-left: none;
+}
+tr:last-child {
+  border-right: none;
+}
+th,
+td {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-collapse: collapse;
+}
+td > svg {
+  margin: 20px auto;
+}
+.line {
+  border-top: 1px solid black;
+}
+.t-title {
+  display: flex;
+}
+.line-title {
+  font-size: 30px;
+  font-family: "Archivo Narrow", sans-serif;
+}
+.t-black {
+  color: black;
+}
+.t-black > .t-title-button {
+  background-color: black;
+  color: white;
+}
+.t-black > .t-title-content {
+  color: black;
+}
+.t-gold {
+  color: gold;
+}
+.t-gold > .t-title-button {
+  background-color: gold;
+  color: black;
+}
+.t-gold > .t-title-content {
+  color: gold;
+}
+.t-green {
+  color: green;
+}
+.t-green > .t-title-content {
+  color: green;
+}
+.t-green > .t-title-button {
+  background-color: green;
+  color: white;
+}
+.t-title-content {
+  font-size: 50px;
+  font-weight: 300;
+  font-family: "Archivo Narrow", sans-serif;
+  margin: auto;
+}
+.t-title-button {
+  border: none;
+  border-radius: 10px;
+  aspect-ratio: 2/1;
+  font-size: 20px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 100px;
+  height: 50px;
+}
