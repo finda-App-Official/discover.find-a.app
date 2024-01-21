@@ -1,0 +1,255 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Anton&family=Archivo+Narrow&family=Saira+Condensed&display=swap");
+
+/* Configs */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: clip;
+}
+.content {
+  width: 100%;
+  height: calc(100vh - 74.75px);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  position: relative;
+  align-items: center;
+  background-color: white;
+  border-top: solid 0.25px black;
+}
+.navbar-content {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo {
+  width: fit-content;
+  display: flex;
+  height: 60px;
+  justify-self: flex-start;
+  margin: auto 0;
+}
+.logo-img {
+  height: 50px;
+}
+.navbar-links {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 20px;
+  }
+}
+.navbar-link-selected {
+  font-weight: 600;
+}
+.navbar-button {
+  background-color: rgb(46, 103, 226);
+  border: none;
+  border-radius: 10px;
+  aspect-ratio: 2/1;
+  font-size: 20px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: white;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.navbar-button:hover {
+  background-color: rgb(36, 83, 186);
+}
+/* Hero */
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 0 20px;
+  min-width: 300px;
+  flex-wrap: wrap;
+}
+.hero-title {
+  font-size: 7vw;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-wrap: wrap;
+}
+.small-hero-title {
+  font-size: 5vw;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-wrap: wrap;
+}
+.hero-description {
+  font-size: 1.3vw;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  width: 100%;
+  text-wrap: wrap;
+}
+.hero-buttons {
+  width: 95%;
+  margin: 10% 2.5%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  > a {
+    margin: 0 2.5%;
+    height: 50px;
+    width: 150px;
+    > img {
+      width: 150px;
+      height: 50px;
+    }
+    > .bn45 {
+      width: 170px;
+    }
+  }
+}
+.hero-img-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  max-width: 500px;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 400px;
+  max-width: 50vw;
+}
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-title {
+  font-size: 50px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background: linear-gradient(117.14deg, #0265b1 42.25%, #7b358c 72%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-half {
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.footer-logo {
+  margin: auto 20px;
+}
+.footer-links {
+  margin: auto 20px;
+  display: flex;
+  > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 20px;
+  }
+}
+.footer-2 {
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+}
+.footer-half > svg {
+  fill: white;
+  margin: auto 10px;
+}
+
+/* Medias */
+@media (max-width: 1200px) {
+  .hero-description {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 888px) {
+  .navbar-links {
+    display: none;
+  }
+  .slide > img {
+    height: 50px;
+  }
+  .sponsors-title {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 500px) {
+  .hero-img {
+    min-width: 300px;
+  }
+}
+@keyframes slide-in-right {
+  from {
+    transform: translateX(2000px);
+  }
+  to {
+    transform: translateX(-1500px);
+  }
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-2000px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}

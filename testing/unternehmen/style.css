@@ -112,6 +112,7 @@ td > svg {
 .t-title {
   display: flex;
 }
+
 .line-title {
   font-size: 30px;
   font-family: "Archivo Narrow", sans-serif;
@@ -151,6 +152,11 @@ td > svg {
   font-weight: 300;
   font-family: "Archivo Narrow", sans-serif;
   margin: auto;
+}
+.t-title-description {
+  font-size: 20px;
+  font-family: "Archivo Narrow", sans-serif;
+  color: black;
 }
 .t-title-button {
   border: none;
