@@ -86,7 +86,15 @@ body {
   flex-wrap: wrap;
 }
 .hero-title {
-  font-size: 10vw;
+  font-size: 7vw;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-wrap: wrap;
+}
+.small-hero-title {
+  font-size: 5vw;
   font-family: "ABeeZee", sans-serif;
   font-weight: 600;
   margin: 0;
@@ -149,25 +157,8 @@ section {
   text-align: center;
   margin: auto;
 }
-.partner-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
-}
-.partner {
-  max-height: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3%;
-  flex-wrap: wrap;
-}
-.partner > img {
-  height: 100px;
-  width: auto;
-}
+
+/* Sponsors */
 
 .sponsors {
   width: 100%;
@@ -210,7 +201,57 @@ section {
   margin: 0 20px;
   opacity: 1;
 }
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(117.14deg, #0265b1 42.25%, #7b358c 72%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-half {
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.footer-logo {
+  margin: auto 20px;
+}
+.footer-links {
+  margin: auto 20px;
+  display: flex;
+  > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 20px;
+  }
+}
+.footer-2 {
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+}
+.footer-half > svg {
+  fill: white;
+  margin: auto 10px;
+}
+
 /* Medias */
+@media (max-width: 1200px) {
+  .hero-description {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+}
 @media (min-width: 1200px) {
   .hero-title {
     font-size: 80px;
