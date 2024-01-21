@@ -66,6 +66,9 @@ body {
 .navbar-button:hover {
   background-color: rgb(36, 83, 186);
 }
+
+/* Hero */
+
 .hero {
   width: 100%;
   display: flex;
@@ -86,6 +89,14 @@ body {
   font-size: 10vw;
   font-family: "ABeeZee", sans-serif;
   font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-wrap: wrap;
+}
+.hero-description {
+  font-size: 1.3vw;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
   margin: 0;
   width: 100%;
   text-wrap: wrap;
@@ -116,6 +127,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 20px;
+  max-width: 500px;
 }
 .hero-img {
   width: 100%;
