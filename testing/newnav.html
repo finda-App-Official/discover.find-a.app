@@ -8,6 +8,20 @@
   </head>
   <body>
     <div class="content" id="content-1">
+      <nav class="top-bar">
+        <div class="navbar-content">
+          <div class="navbar-logo">
+            <img class="logo-img" src="../src/images/finda-Logo.png" />
+          </div>
+          <button
+            type="button"
+            class="navbar-button"
+            onclick="window.location.href='https://dev.find-a.app'"
+          >
+            login
+          </button>
+        </div>
+      </nav>
       <div class="hero">
         <div class="hero-content">
           <div class="hero-title">Hol dir jetzt die finda App!</div>
@@ -63,25 +77,91 @@
         </div>
       </section>
     </div>
+    <div class="content" id="content-2">
+      <nav class="top-bar">
+        <div class="navbar-content">
+          <div class="navbar-logo">
+            <img class="logo-img" src="../src/images/finda-Logo.png" />
+          </div>
+          <button
+            type="button"
+            class="navbar-button"
+            onclick="window.location.href='https://dev.find-a.app'"
+          >
+            login
+          </button>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-img-container"></div>
+        <div class="hero-content">
+          <div class="hero-title">Jetzt kostenlos registrieren</div>
+          <div class="hero-buttons">
+            <a class="hero-button" href="https://dev.find-a.app"
+              ><div class="hero-button-text">Anmelden</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="table-showcase">
+        <div class="table-showcase-title">Premium</div>
+        <table class="premium-table">
+          <tr>
+            <td></td>
+            <td>
+              <div class="preise-table-title">Premium</div>
+              <div class="preise-table-preis"></div>
+              <button class="preise-table-button">Buchen</button>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="preise-title">Video Upload für Jobs</div></td>
+            <td>
+              <div class="preise-icons">
+                <div class="preise-included">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="green"
+                    class="bi bi-check2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
+                    />
+                  </svg>
+                </div>
+                <div class="preise-info">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="blue"
+                    class="bi bi-info-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
     <nav class="navbar">
       <div class="navbar-content">
-        <div class="navbar-logo">
-          <img class="logo-img" src="../src/images/finda-Logo.png" />
-        </div>
         <div class="navbar-links">
-          <a href="/testing/index.html" class="navbar-link-selected"
+          <a onclick="swipeToBewerber()" class="navbar-link-selected"
             >Bewerber</a
           >
-          <a href="/testing/unternehmen/index.html">Unternehmen</a>
-          <a href="/newsletter">Newsletter</a>
+          <a onclick="swipeToUnternehmen()">Unternehmen</a>
+          <a onclick="swipeToAbout()">about</a>
+          <a onclick="swipeToContact()">contact</a>
         </div>
-        <button
-          type="button"
-          class="navbar-button"
-          onclick="window.location.href='https://dev.find-a.app'"
-        >
-          login
-        </button>
       </div>
     </nav>
     <footer>
@@ -93,6 +173,7 @@
           <a href="/about/impressum">Impressum</a>
           <a href="/about/datenschutz">Datenschutz</a>
           <a href="/about/agb">AGB</a>
+          <a href="/newsletter">Newsletter</a>
         </div>
       </div>
       <div class="footer-half footer-2">
