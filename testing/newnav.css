@@ -210,7 +210,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .table-showcase-title {
   font-size: 50px;
@@ -220,10 +220,10 @@ section {
   margin: auto;
 }
 .premium-table {
-  width: 90%;
+  width: 60%;
   margin: auto;
   border-collapse: collapse;
-  > tr {
+  tr {
     width: 100%;
     > td {
       width: 50%;
@@ -235,6 +235,42 @@ section {
       font-weight: 600;
     }
   }
+}
+.premium {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+}
+.preise-content {
+  width: 100%;
+  text-align: start;
+  display: none;
+}
+.preise-title {
+  font-size: 2rem;
+  margin: auto 0;
+}
+.preise-info {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preise-info:hover {
+  cursor: pointer;
+}
+.preise-line {
+  justify-content: center;
+  display: flexbox;
+  flex-direction: column;
+}
+.preise-icons {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 /* Footer */
