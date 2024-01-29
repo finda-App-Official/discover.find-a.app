@@ -123,6 +123,14 @@ body::-webkit-scrollbar {
   width: 100%;
   text-wrap: wrap;
 }
+.really-small-hero-title {
+  font-size: 3vw;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  text-wrap: wrap;
+}
 .hero-description {
   font-size: 1.3vw;
   font-family: "ABeeZee", sans-serif;
@@ -159,14 +167,14 @@ body::-webkit-scrollbar {
     color: white;
     cursor: pointer;
     margin: 0 20px;
-    width: 200px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     text-decoration: none;
     align-items: center;
     margin: 0;
     > .hero-button-text {
-      margin: auto 10px;
+      margin: auto 5px;
       font-size: 30px;
     }
   }
@@ -207,6 +215,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin: 40px 0;
 }
 .table-showcase-title {
   font-size: 50px;
@@ -283,6 +292,12 @@ section {
   list-style: none;
 }
 #content1 {
+  display: none;
+}
+#content3 {
+  display: none;
+}
+#content4 {
   display: none;
 }
 
