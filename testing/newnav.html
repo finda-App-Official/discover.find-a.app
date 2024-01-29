@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finda | Home</title>
     <link rel="stylesheet" href="newnav.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+    <link rel="stylesheet" href="src/navbar.css" />
+    <link rel="stylesheet" href="src/content.css" />
   </head>
   <body>
     <div class="content-slider">
@@ -97,14 +100,39 @@
             </div>
           </nav>
           <div class="hero">
-            <div class="hero-img-container"></div>
+            <div class="hero-img-container">
+              <img src="phone1.png" alt="" class="hero-img" />
+            </div>
             <div class="hero-content">
-              <div class="hero-title">Jetzt kostenlos registrieren</div>
-              <div class="hero-buttons">
-                <a class="hero-button" href="https://dev.find-a.app"
-                  ><div class="hero-button-text">Anmelden</div>
-                </a>
+              <div class="hero-title">Direkter Kontakt zu Schülern</div>
+              <div class="hero-description">
+                Der Ausbildungsmarkt scheint leergefegt und der Erstkontakt zu
+                Schülern wird immer schwieriger – deshalb setzen wir dort an wo
+                die Jugendlichen sind und bieten eine einfache, unkomplizierte
+                und regionale Schnittstelle zwischen Unternehmen und Schülern
+                zur Vermittlung von Ausbildungs- und Praktikumsplätzen. Wie das
+                funktioniert?
+                <a onclick="swipeToBewerber()">Siehe hier</a>
               </div>
+            </div>
+          </div>
+          <div class="hero">
+            <div class="hero-content">
+              <div class="really-small-hero-title">
+                Kostenlos Registrieren und in wenigen Schritten erfolgreich
+                anwerben
+              </div>
+              <div class="hero-buttons">
+                <button
+                  class="hero-button"
+                  onclick="window.location.href='https://dev.find-a.app'"
+                >
+                  <div class="hero-button-text">Anmelden</div>
+                </button>
+              </div>
+            </div>
+            <div class="hero-img-container">
+              <img src="phone2.png" alt="" class="hero-img" />
             </div>
           </div>
           <div class="table-showcase">
@@ -124,7 +152,7 @@
                     <div class="preise-title">
                       Video Einbindungen in Stellen
                     </div>
-                    <div class="preise-info">
+                    <div class="preise-info" onclick="showPrContent(1)">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -132,7 +160,6 @@
                         fill="blue"
                         class="bi bi-info-circle-fill"
                         viewBox="0 0 16 16"
-                        onclick="showPrConte(1)"
                       >
                         <path
                           d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"
@@ -163,24 +190,66 @@
                       />
                     </svg>
                   </div>
-                  <div class="preise-content"></div>
                 </td>
               </tr>
+              <tr></tr>
             </table>
           </div>
         </li>
+        <li class="content" id="content3">
+          <div class="hero">
+            <div class="hero-img-container">
+              <img
+                src="../src/images/finda-Logo-only.png"
+                alt=""
+                class="hero-img"
+              />
+            </div>
+            <div class="hero-content">
+              <div class="really-small-hero-title">Von Schülern entwickelt</div>
+              <div class="hero-description">
+                Das finda Team, bestehend aus vier Schülern des
+                Windthorst-Gymnasiums in Meppen, fand durch einen schulische
+                Wettbewerb zueinander, bei welchem das Konzept zur finda App
+                entwickelt wurde. Anschließend wollten alle Beteiligten das
+                Projekt weiterführen, was uns zur Schülerfirmengründung und zu
+                dem Softwareunternehmen <a href="https://ncn.de">ncn</a> aus
+                Meppen führte, mit welchem wir die komplette Entwicklung der
+                App, mit tatkräftiger Unterstützung unserer knapp 25 Sponsoren,
+                im Zeitraum von nur etwa 1 Jahr bewältigen und finanzieren
+                konnten.
+              </div>
+            </div>
+          </div>
+          <div class="hero">
+            <div class="really-small-hero-title">
+              Matchen was zusammengehört
+            </div>
+            <div class="hero-description">
+              Unsere Mission ist es, mit Innovation und Authentizität den
+              Ausbildungsmarkt in unserer Region zu bewegen und Unternehmen und
+              Schüler zusammenzubringen. Dafür entwickeln wir stetig unsere App
+              weiter und halten dich über unsere Socials immer auf dem
+              Laufenden. Wenn du uns für was auch immer direkt kontaktieren
+              möchtest, findest du unsere Kontaktdaten
+              <a onclick="swipeToContact()">hier</a>
+            </div>
+          </div>
+        </li>
+        <li class="content" id="content4"></li>
       </ul>
     </div>
     <nav class="navbar">
-      <div class="navbar-content">
-        <div class="navbar-links">
-          <a onclick="swipeToBewerber()" class="navbar-link-selected"
-            >Bewerber</a
-          >
-          <a onclick="swipeToUnternehmen()">Unternehmen</a>
-          <a onclick="swipeToAbout()">about</a>
-          <a onclick="swipeToContact()">contact</a>
-        </div>
+      <div class="navbar-links">
+        <a onclick="swipeToBewerber()" id="nav-1">Bewerber</a>
+        <a
+          onclick="swipeToUnternehmen()"
+          id="nav-2"
+          class="navbar-link-selected"
+          >Unternehmen</a
+        >
+        <a onclick="swipeToAbout()" id="nav-3">about</a>
+        <a onclick="swipeToContact()" id="nav-4">contact</a>
       </div>
     </nav>
     <footer>
